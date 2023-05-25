@@ -1,7 +1,7 @@
-# Auto-GPT Space Plugin
-This plugin enables AutoGPT to see how many people are in space. This can help enable AutoGPT to better achieve its goals
+# Auto-GPT Ryan Reynolds Plugin
+This plugin enables AutoGPT to answer everything in the style of Ryan Reynolds.
 
 ## Use cases
- - Researching how many people are in space
+ - Asking it to return some text
 ## Setup
 Setup is easy. Just follow the instructions in [Auto-GPT-Plugins/README.md](https://github.com/Significant-Gravitas/Auto-GPT-Plugins/blob/master/README.md)
