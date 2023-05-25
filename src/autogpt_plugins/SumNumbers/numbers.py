@@ -15,4 +15,4 @@ def get_sum_numbers():
     #Convert it to JSON
     data = Tsum.json()
     #Extract the number and return it
-    return data["number"]
+    return data["sum"]
