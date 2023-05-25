@@ -19,6 +19,8 @@ def get_sum_numbers():
     Tsum = sum(num1_list, num2_list)
 
     #Convert it to JSON
-    data = Tsum.json()
+    
+    json_string = json.dumps({"Tsum": Tsum})
+
     #Extract the number and return it
-    return data["sum"]
+    return json_string["Tsum"]
