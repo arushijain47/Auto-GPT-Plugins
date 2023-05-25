@@ -17,6 +17,7 @@ def get_sum_numbers():
     
     #Sum the lists
     Tsum = sum(num1_list, num2_list)
+    return(Tsum)
 
     #Convert it to JSON
     
