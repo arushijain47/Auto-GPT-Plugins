@@ -2,7 +2,7 @@ import requests
 
 
 def get_num_astronauts():
-    """Get the number of astronauts in space.
+    """Get the sum of two .
 
     Args:
         None
@@ -11,8 +11,11 @@ def get_num_astronauts():
         int: The number of astronauts in space.
     """
     #Get the data
-    response = requests.get("http://api.open-notify.org/astros.json")
+    num1 = int(input('Enter first number: '))
+    num2 = int(input('Enter second number: '))
+    Tsum = num1 + num2
+    
     #Convert it to JSON
-    data = response.json()
+    data = Tsum.json()
     #Extract the number and return it
     return data["number"]
