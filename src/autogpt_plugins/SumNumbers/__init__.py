@@ -25,13 +25,13 @@ class AutoGPTSumPlugin(AutoGPTPluginTemplate):
 
     def post_prompt(self, prompt: PromptGenerator) -> PromptGenerator:
         if self.load_commands:
-            from .astronauts import get_num_astronauts
+            from .numbers import get_sum_numbers
 
             prompt.add_command(
                 "Give the sum of the two numbers",
-                "get_num_astronauts",
+                "get_sum_numbers",
                 {},
-                get_num_astronauts,
+                get_sum_numbers,
             )
 
         return prompt
