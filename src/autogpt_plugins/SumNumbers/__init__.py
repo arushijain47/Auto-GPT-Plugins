@@ -28,7 +28,7 @@ class AutoGPTSumPlugin(AutoGPTPluginTemplate):
             from .numbers import get_sum_numbers
 
             prompt.add_command(
-                "Give the sum of the two numbers",
+                "Get the sum of the two numbers",
                 "get_sum_numbers",
                 {},
                 get_sum_numbers,
