@@ -11,16 +11,16 @@ class Message(TypedDict):
     content: str
 
 
-class AutoGPTSpacePlugin(AutoGPTPluginTemplate):
+class AutoGPTSumPlugin(AutoGPTPluginTemplate):
     """
-    This is the Auto-GPT space plugin.
+    This is the Auto-GPT sum plugin.
     """
 
     def __init__(self):
         super().__init__()
-        self._name = "Auto-GPT-Space-Plugin"
+        self._name = "Auto-GPT-Sum-Plugin"
         self._version = "0.1.3"
-        self._description = "Auto-GPT Space Plugin: Get the number of astronauts in space in real-time.."
+        self._description = "Auto-GPT Sum Plugin: Get the sum of the 2 numbers.."
         self.load_commands = True
 
     def post_prompt(self, prompt: PromptGenerator) -> PromptGenerator:
@@ -28,7 +28,7 @@ class AutoGPTSpacePlugin(AutoGPTPluginTemplate):
             from .astronauts import get_num_astronauts
 
             prompt.add_command(
-                "Get number of astronauts",
+                "Give the sum of the two numbers",
                 "get_num_astronauts",
                 {},
                 get_num_astronauts,
