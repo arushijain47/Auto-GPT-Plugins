@@ -1,14 +1,11 @@
-import requests
-
-
-def get_num_astronauts():
+def get_sum_numbers():
     """Get the sum of two .
 
     Args:
         None
 
     Returns:
-        int: The number of astronauts in space.
+        int: The sum of two numbers.
     """
     #Get the data
     num1 = int(input('Enter first number: '))
