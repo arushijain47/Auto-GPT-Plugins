@@ -1,5 +1,5 @@
 def get_sum_numbers():
-    """Get the sum of two .
+    """Get the sum of two numbers.
 
     Args:
         None
@@ -21,7 +21,7 @@ def get_sum_numbers():
 
     #Convert it to JSON
     
-    json_string = json.dumps({"Tsum": Tsum})
+    #json_string = json.dumps({"Tsum": Tsum})
 
     #Extract the number and return it
-    return json_string["Tsum"]
+    #return json_string["Tsum"]
